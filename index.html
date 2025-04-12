@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login & Signup Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-box" id="loginForm">
+      <h2>Login</h2>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button>Login</button>
+      <p>Don't have an account? <a href="#" onclick="showSignup()">Sign up</a></p>
+    </div>
+
+    <div class="form-box" id="signupForm" style="display: none;">
+      <h2>Sign Up</h2>
+      <input type="text" placeholder="First Name *" required />
+      <input type="text" placeholder="Middle Name" />
+      <input type="text" placeholder="Last Name" />
+      <input type="date" placeholder="dd-mm-yyyy" required />
+      <input type="tel" maxlength=10 placeholder="Mobile Number" pattern="[0-9]{10}" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <label style="font-size: 12px; display: flex; align-items: center;">
+        <input type="checkbox" required /> Agree to our Terms and Privacy Policy
+      </label>
+      <button>Sign Up</button>
+      <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script type="module" src="fbase.js"></script>
+
+</body>
+</html>
