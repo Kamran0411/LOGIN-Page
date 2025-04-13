@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login & Signup Form</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="container">
     <div class="form-box" id="loginForm">
@@ -22,7 +24,8 @@
       <input type="text" placeholder="Middle Name" />
       <input type="text" placeholder="Last Name" />
       <input type="date" placeholder="dd-mm-yyyy" required />
-      <input type="tel" maxlength=10 placeholder="Mobile Number" pattern="[0-9]{10}" required />
+      <input type="tel" id="mobile" placeholder="Mobile Number" maxlength="10" required inputmode="numeric"
+        oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,10);" />
       <input type="email" placeholder="Email" required />
       <input type="password" placeholder="Password" required />
       <label style="font-size: 12px; display: flex; align-items: center;">
@@ -37,4 +40,5 @@
   <script type="module" src="fbase.js"></script>
 
 </body>
+
 </html>

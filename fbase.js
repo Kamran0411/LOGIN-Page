@@ -30,7 +30,7 @@ const auth = getAuth(app);
   }
   
   function validateMobile(mobile) {
-    const regex = /[0-9]{9}/;
+    const regex = /^\d{10}$/;
     return regex.test(mobile);
   }
   
