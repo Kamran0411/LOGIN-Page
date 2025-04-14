@@ -104,3 +104,4 @@ const auth = getAuth(app);
         alert("Signup failed: " + error.message);
       });
   });
+  
